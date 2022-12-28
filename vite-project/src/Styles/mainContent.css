@@ -2,13 +2,13 @@ main {
   padding: 2rem;
 }
 
-form {
+.form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
-form button {
+.form button {
   grid-column: 1 / -1;
   border-radius: 5px;
   background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
@@ -19,11 +19,25 @@ form button {
   font-size: 1rem;
 }
 
-form input {
+.form input {
   font-family: "Karla", sans-serif;
   border-radius: 5px;
   border: 1px solid #D5D4D8;
   text-indent: 5px;
   padding: 0.7rem 0.5rem;
   font-size: 1rem;
+}
+
+.memeImageContainer {
+  display: flex;
+  justify-content: center;
+  padding-block: 2rem;
+}
+
+.memeImageContainer img {
+  /* max-height: 30rem;
+  min-height: 30rem;
+  max-width: 30rem;
+  min-width: 30rem;
+  object-fit: fill; */
 }
