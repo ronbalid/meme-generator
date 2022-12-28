@@ -33,11 +33,3 @@ main {
   justify-content: center;
   padding-block: 2rem;
 }
-
-.memeImageContainer img {
-  /* max-height: 30rem;
-  min-height: 30rem;
-  max-width: 30rem;
-  min-width: 30rem;
-  object-fit: fill; */
-}
