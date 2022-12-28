@@ -3,13 +3,14 @@ import "../Styles/mainContent.css"
 import memesData from '../data/memesData'
 
 export default function MainContent() {
+
+    const [memeImage, setMemeImage] = React.useState("")
+
     function getMemeImage() {
       const memes = memesData.data.memes
       const randomMemeImage = memes[Math.floor(Math.random() * memes.length)].url
-      console.log(randomMemeImage)
       
-      const memeImage = document.getElementById('meme-image')
-      memeImage.src = randomMemeImage
+      setMemeImage(randomMemeImage)
     }
 
     return (
@@ -20,7 +21,7 @@ export default function MainContent() {
             <button onClick={getMemeImage}>Get a new meme image 🖼</button>
           </div>
           <div className="memeImageContainer">
-            <img src="" alt="" id="meme-image" />
+            <img src={memeImage} alt="" id="meme-image" />
           </div>
         </main>
     )
